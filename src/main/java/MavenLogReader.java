@@ -24,7 +24,7 @@ public class MavenLogReader {
 
 
     @SneakyThrows
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args)  {
 
         Runtime runtime = Runtime.getRuntime();
         Process exec = runtime.exec("mvn clean package -f \"/home/ludovd/win/Documents and Settings/mi/Desktop/WORK/Imola Informatica/scrigno-admin-maven/pom.xml");
