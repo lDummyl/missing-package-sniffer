@@ -26,12 +26,12 @@ public class MavenLogReader {
     @SneakyThrows
     public static void main(String[] args)  {
 
-        Runtime runtime = Runtime.getRuntime();
-        Process exec = runtime.exec("mvn clean package -f \"/home/ludovd/win/Documents and Settings/mi/Desktop/WORK/Imola Informatica/scrigno-admin-maven/pom.xml");
-        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(exec.getInputStream()));
-        int exit = exec.waitFor();
-        System.out.println(exit);
-        bufferedReader.lines().forEach(System.out::println);
+//        Runtime runtime = Runtime.getRuntime();
+//        Process exec = runtime.exec("mvn clean package -f \"/home/ludovd/win/Documents and Settings/mi/Desktop/WORK/Imola Informatica/scrigno-admin-maven/pom.xml");
+//        BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(exec.getInputStream()));
+//        int exit = exec.waitFor();
+//        System.out.println(exit);
+//        bufferedReader.lines().forEach(System.out::println);
 
         File resultDump = Paths.get(resultFile).toFile();
         resultDump.getParentFile().mkdirs();

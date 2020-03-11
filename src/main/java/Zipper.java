@@ -1,3 +1,4 @@
+import lombok.Cleanup;
 import lombok.SneakyThrows;
 
 import java.io.File;
@@ -36,9 +37,12 @@ public class Zipper {
     private static List<String> split;
 
 
-//    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) throws IOException {
+        parse();
+    }
     public static void parse() throws IOException {
         Paths.get(TEMP_FOLDER).toFile().mkdirs();
+        Paths.get(RESULT_FOLDER).toFile().delete();
         split = Files.lines(Paths.get(BUFFER_PATH)).map(i -> i.replace(".", "/")).collect(Collectors.toList());
         remains = new HashSet<>(split);
         Files.walk(Paths.get(ROOT_FOLDER)).forEach(Zipper::lookInto);
@@ -122,7 +126,7 @@ public class Zipper {
         File file = Paths.get(folder, entryName).toFile();
         file.getParentFile().mkdirs();
         if (file.exists())return file.toPath();
-        OutputStream out = new FileOutputStream(folder + "/" + entryName);
+        @Cleanup OutputStream out = new FileOutputStream(folder + "/" + entryName);
         byte[] buffer = new byte[9000];
         int len;
         while (( len = zin.read(buffer)) != -1) {
