@@ -10,7 +10,7 @@ public class Conf {
 
     @Bean
     public BasicAuthRequestInterceptor basicAuthRequestInterceptor() {
-        return new BasicAuthRequestInterceptor("dLudov", "ХХХХХХХХ");
+        return new BasicAuthRequestInterceptor("dLudov", "z8B41CL2siVn");
     }
 }
 
