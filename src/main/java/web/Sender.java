@@ -10,7 +10,8 @@ import java.nio.file.Paths;
 @Service
 public class Sender {
 
-    String path = "/home/ludovd/win/Documents and Settings/mi/Desktop/WORK/Imola Informatica/missing-package-sniffer/src/main/resources/results/CensimentoAutomatico-1.0.2.jar";
+    String path1 = "/home/ludovd/win/Documents and Settings/mi/Desktop/WORK/Imola Informatica/missing-package-sniffer/src/main/resources/results/CensimentoAutomatico-1.0.2.jar";
+    String path = "/home/ludovd/win/Documents and Settings/mi/Desktop/WORK/Imola Informatica/missing-package-sniffer/src/main/resources/results/cxf-stub-condizioniere-1.1.0.0.jar";
 
 
     ArtifactoryApi artifactoryApi;
