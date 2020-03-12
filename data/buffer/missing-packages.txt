@@ -1,0 +1,5 @@
+it.popso.ws.biesseti.condizioni.lettura.version_3
+it.popso.ws.common.schema.fault.version_3
+it.popso.ws.partiteprenotate.scrittura.schema.v1
+it.popso.ws.partiteprenotate.scrittura.v1
+org.jboss.resource.adapter.jdbc
