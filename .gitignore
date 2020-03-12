@@ -1,2 +1,6 @@
 # Project exclude paths
 /target/
+/.idea/
+/missing-package-sniffer.iml
+/data/results/
+/data/temp/
